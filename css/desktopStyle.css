@@ -1,0 +1,78 @@
+
+    .menu, #modalMenu{
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        color: #fff;
+         margin-top: -26px;
+
+      }
+      
+      .navbar-logo {
+        font-size: 1.5em;
+        text-transform: uppercase;
+      }
+      
+      .navbar-menu {
+        
+        display: flex;
+        justify-content: center;
+      }
+      
+      .navbar-menu ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .navbar-menu li {
+        margin: 0 20px;
+      }
+  .see-more-btn {
+    
+  }    
+  .section-1{
+    height: 100vh;
+    background-image: url(../images/laptopimage.jpg);
+    background-repeat: no-repeat;  
+  background-position: left center;
+  background-size: 100% 100%;
+  }
+  .primary-heading{
+   
+  }
+  .nameTop{
+    width: 50%;
+    margin-left: 40px;
+  }
+  article{
+    width: 50%;
+    margin: auto;
+  }
+
+  .row-edit {
+    border: 1px solid ;
+    text-align: center;
+  }
+
+.mob{
+    display: none;
+}
+.desk{
+    display: flex;
+}
