@@ -1,5 +1,5 @@
 * {
-  font-family: 'Lato',Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 /* MOBILE MENU SECTION */
@@ -8,7 +8,7 @@
 .menu {
   border: none;
   background-color: inherit;
-    display: initial;
+  display: initial;
 }
 
 .menuIcon {
@@ -63,8 +63,6 @@ a {
   border: none;
   background-color: inherit;
 }
-
-
 
 .navbar-menu {
   display: none;
@@ -132,7 +130,6 @@ a {
 .row-edit {
   border: 1px solid;
   text-align: left;
-    
 }
 
 .row-edit div h4 {
@@ -152,7 +149,6 @@ a {
 #join:hover {
   background-color: #ec5242;
 }
-
 
 .rule-top {
   width: 20%;
