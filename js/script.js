@@ -28,7 +28,7 @@ menuItems.forEach(
 
 const eachSpeakers = [
   {
-    image: '/images/portrait1.jpg',
+    image: 'https://github.com/danielochuba/HTML-basic-JavaScript-Capstone/blob/Capstone/images/portrait1.jpg',
     name: 'Yochai Benkler',
     title: 'Berkman Professor of Enterprnurial Legal Studies at Havard Law School',
     brief: 'Benkler studies commons-based peer production, and published his seminal book; The Wealth of Networks in 2006',
