@@ -1,36 +1,11 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>HTML + basic JavaScript Capstone README</b></h3>
+  <h3><b>Daniel-Code -- HTML + basic JavaScript Capstone README</b></h3>
 
 </div>
 
@@ -172,12 +147,16 @@ Example command:
 > Mention all of the collaborators of this project.
 
 
-👤 **Author1**
+👤 **Daniel Ochuba**
 
 - GitHub: [@githubhandle](https://github.com/danielochuba)
 - Twitter: [@twitterhandle](https://twitter.com/ochuba_daniel)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/daniel-ochuba-614572238)
 
+👤 **Cindy Shin**
+- Original Design: [by Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Dribbble: [Cindy Shin](https://dribbble.com/adagio07/collections)
+- LinkedIn: [Cindy Shin](https://www.linkedin.com/in/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,6 +190,10 @@ Feel free to check the [issues page](../../issues/).
 If you like this project you can give me a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Cindy Shin](https://www.behance.net/adagio07) the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 
 
