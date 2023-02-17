@@ -1,22 +1,22 @@
 const toggle = document.querySelector('.menu');
 const menu = document.querySelector('.mobile-menu');
 const modalCloseBtn = document.querySelector('#exit-btn');
-const seeMore = document.querySelector('.see-more-btn');
+const body = document.querySelector('body');
 
 toggle.addEventListener('click', () => {
   menu.classList.remove('display-none');
   menu.classList.add('display-block');
   modalCloseBtn.classList.remove('display-none'); 
-  modalCloseBtn.classList.add('display-block');  
+  modalCloseBtn.classList.add('display-block');
+  body.classList.add('none-scroll');
 });
 
 modalCloseBtn.addEventListener('click', () => {
     menu.classList.remove('display-block');
     menu.classList.add('display-none'); 
-    modalCloseBtn.classList.toggle('display-block');   
+    modalCloseBtn.classList.toggle('display-block'); 
+    body.classList.remove('none-scroll');  
 });
-
-
 
 const eventSpeakers = [{
   image: '/images/portrait1.jpg',
@@ -90,7 +90,7 @@ mobileSpeakersDetails.innerHTML += `
                             </div>
                         </div>
                     </div>
-            <button class="btn btn-outline-secondary see-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpeakers" aria-expanded="false" aria-controls="collapseSpeakers">
+            <button id="show-button" class="btn btn-outline-secondary see-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpeakers" aria-expanded="false" aria-controls="collapseSpeakers">
             See More ▽
             </button>
             <div class="collapse" id="collapseSpeakers">
@@ -163,6 +163,30 @@ mobileSpeakersDetails.innerHTML += `
     </div>
         `;
 
+const seeMore = document.querySelector('#show-button');
+seeMore.addEventListener('click', () => {
+    seeMore.style.order = '5';
+    seeMore.textContent = 'See Less △';
+});
+
+var count = 0;  
+seeMore.onclick = function () {
+    count++;
+}
+
+
+seeMore.addEventListener('click', () => {
+  
+    if(count % 2 != 0){
+    seeMore.style.order = '5';
+    seeMore.textContent = 'See Less △';
+}else{
+    seeMore.style.order = '0';
+    seeMore.textContent = 'See More ▽';
+}
+});
+
+
 const desktopSpeakersDetails = document.querySelector('.row-desk');
 
 let desktopSpeakers = `
@@ -170,22 +194,22 @@ let desktopSpeakers = `
 
 for (let i = 0; i<= eventSpeakers.length; i += 1){
   desktopSpeakers = `
-                    <div class="col-lg-6">
-                        <div class="card mb-3 mt-2 border-0" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-3 speaker-img">
-                                    <img src="${eventSpeakers[i].image}"  class="img-fluid rounded-start mt-3 w-100 h-75 profile-shot" alt="headshot">
-                                </div>
-                                <div class="col-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">${eventSpeakers[i].name}</h5>
-                                        <small class="speaker-title-1">${eventSpeakers[i].title}</small><hr class="speakers-rule">
-                                        <p class="card-text">${eventSpeakers[i].brief}</p>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="col-lg-6">
+            <div class="card mb-3 mt-2 border-0" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-3 speaker-img">
+                        <img src="${eventSpeakers[i].image}"  class="img-fluid rounded-start mt-3 w-100 h-75 profile-shot" alt="headshot">
+                    </div>
+                    <div class="col-9">
+                        <div class="card-body">
+                            <h5 class="card-title">${eventSpeakers[i].name}</h5>
+                            <small class="speaker-title-1">${eventSpeakers[i].title}</small><hr class="speakers-rule">
+                            <p class="card-text">${eventSpeakers[i].brief}</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 `;
 desktopSpeakersDetails.innerHTML += desktopSpeakers;
 }
